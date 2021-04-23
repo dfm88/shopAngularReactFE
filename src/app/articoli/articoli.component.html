@@ -1,0 +1,25 @@
+<h1>articoli Disponibili!</h1>
+
+<table id="articoli" border="1">
+    <caption>Alimentari</caption>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Label</th>
+            <th>Out Of Stock</th>
+            <th>Product Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let articolo of articoli">
+            <td>{{articolo.id}}</td>
+            <td>{{articolo.description}}</td>
+            <td>{{articolo.label}}</td>
+            <td>{{articolo.outOfStock}}</td>
+            <td>{{articolo.productType}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
